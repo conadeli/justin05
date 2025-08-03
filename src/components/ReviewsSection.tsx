@@ -14,19 +14,19 @@ const ReviewsSection = () => {
       before: "Apple... red...",
       after: "I like red apples because they're sweet!",
       student: "김민준 (초2)",
-      image: "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+      image: "/images/초등.png"
     },
     {
       before: "Go... school...",
       after: "I go to school by bus every morning.",
       student: "이서연 (초1)",
-      image: "https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+      image: "/images/초등_1.png"
     },
     {
       before: "Play... friend...",
       after: "I want to play soccer with my friends.",
       student: "박지훈 (초3)",
-      image: "https://images.pexels.com/photos/8471831/pexels-photo-8471831.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+      image: "/images/초등_2.png"
     }
   ];
 
