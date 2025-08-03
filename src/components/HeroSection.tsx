@@ -44,10 +44,10 @@ const HeroSection = () => {
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
                 <img 
-                  src="https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop" 
-                  alt="아이가 화상 수업하는 모습" 
-                  className="rounded-xl w-full h-auto"
-                />
+  src="/images/main.png" 
+  alt="아이가 화상 수업하는 모습" 
+  className="rounded-xl w-full h-auto"
+/>
               </div>
               <div className="absolute -top-4 -right-4 bg-emerald-500 text-white p-4 rounded-full shadow-lg">
                 <Play size={24} />
