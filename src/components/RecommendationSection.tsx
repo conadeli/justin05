@@ -20,25 +20,25 @@ const RecommendationSection = () => {
       icon: <BookOpen className="text-sky-500" size={32} />,
       title: "학원 수업에서 효과를 못 느끼는 아이",
       description: "단체 수업의 한계를 뛰어넘는 집중 학습 환경",
-      image: "/images/추천1.png"
+      image: "/images/추천_1.png"
     },
     {
       icon: <MessageSquare className="text-emerald-500" size={32} />,
       title: "문장으로 말하기를 원하는 아이",
       description: "단어가 아닌 완전한 문장으로 표현하는 능력 개발",
-      image: "/images/추천2.png"
+      image: "/images/추천_2.png"
     },
     {
       icon: <Lightbulb className="text-orange-500" size={32} />,
       title: "단어는 알지만 문장으로 표현하지 못하는 아이",
       description: "알고 있는 단어를 실제 대화에서 활용하는 방법 학습",
-      image: "/images/추천3.png"
+      image: "/images/추천_3.png"
     },
     {
       icon: <Heart className="text-pink-500" size={32} />,
       title: "내성적이지만 영어에 관심 있는 아이",
       description: "편안한 1:1 환경에서 자신감을 키워나갑니다",
-      image: "/images/추천4.png"
+      image: "/images/추천_4.png"
     }
   ];
 
