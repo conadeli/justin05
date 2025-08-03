@@ -14,7 +14,7 @@ const RecommendationSection = () => {
       icon: <Users className="text-blue-600" size={32} />,
       title: "1:1 수업이 꼭 필요한 아이",
       description: "개별 맞춤 지도로 아이만의 속도에 맞춰 학습합니다",
-      image: "https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop"
+      image: "/images/추천.png"
     },
     {
       icon: <BookOpen className="text-sky-500" size={32} />,
