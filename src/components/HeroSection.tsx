@@ -5,7 +5,10 @@ const HeroSection = () => {
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact-section');
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
   };
 
@@ -17,7 +20,7 @@ const HeroSection = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
               저스틴 선생님과 함께하는<br />
-              <span className="text-sky-300">1:1 온라인 영어과외</span>
+              <span className="text-sky-300">1:1 온라인 집중 영어</span>
             </h1>
             <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
               한국인 선생님과 기초부터, 외국인 선생님과 실전까지<br />
@@ -26,14 +29,14 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button 
                 onClick={scrollToContact}
-                className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-150 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2 cursor-pointer active:scale-95"
               >
                 <Play size={20} />
                 무료 체험 수업 신청하기
               </button>
               <a 
                 href="tel:010-8678-0842"
-                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2"
+                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-150 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2 cursor-pointer active:scale-95"
               >
                 <Phone size={20} />
                 빠른 전화 상담하기
@@ -44,10 +47,10 @@ const HeroSection = () => {
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
                 <img 
-  src="/images/메인.png" 
-  alt="아이가 화상 수업하는 모습" 
-  className="rounded-xl w-full h-auto"
-/>
+                  src="https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop" 
+                  alt="아이가 화상 수업하는 모습" 
+                  className="rounded-xl w-full h-auto"
+                />
               </div>
               <div className="absolute -top-4 -right-4 bg-emerald-500 text-white p-4 rounded-full shadow-lg">
                 <Play size={24} />
