@@ -44,7 +44,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
                 <img 
-  src="/images/선생님.png" 
+  src="/images/메인.png" 
   alt="아이가 화상 수업하는 모습" 
   className="rounded-xl w-full h-auto"
 />
