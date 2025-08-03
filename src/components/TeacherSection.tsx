@@ -86,7 +86,7 @@ const TeacherSection = () => {
             <div className="relative">
               <div className="bg-gradient-to-br from-blue-100 to-sky-100 rounded-3xl p-8">
                 <img 
-                  src="https://images.pexels.com/photos/3771074/pexels-photo-3771074.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop" 
+                  src="/images/선생님.png" 
                   alt="온라인 수업 중인 선생님" 
                   className="rounded-2xl w-full h-auto shadow-lg"
                 />
