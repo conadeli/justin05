@@ -13,31 +13,31 @@ const RecommendationSection = () => {
     {
       icon: <Users className="text-blue-600" size={32} />,
       title: "1:1 수업이 꼭 필요한 아이",
-      description: "아이의 속도에 맞춘 학습효과를위해 "방법"을 찾아 수업해야하는 아이",
+      description: "개별 맞춤 지도로 아이만의 속도에 맞춰 학습합니다",
       image: "https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop"
     },
     {
       icon: <BookOpen className="text-sky-500" size={32} />,
       title: "학원 수업에서 효과를 못 느끼는 아이",
-      description: "학원은 열심히 나가는데 실제적인 이해도나 숙지가 느린아이",
+      description: "단체 수업의 한계를 뛰어넘는 집중 학습 환경",
       image: "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop"
     },
     {
       icon: <MessageSquare className="text-emerald-500" size={32} />,
       title: "문장으로 말하기를 원하는 아이",
-      description: "단어가 아닌 완전한 문장으로 표현하는 실력향상",
+      description: "단어가 아닌 완전한 문장으로 표현하는 능력 개발",
       image: "https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop"
     },
     {
       icon: <Lightbulb className="text-orange-500" size={32} />,
-      title: "수업에 흥미를 느끼지 못하는 아이",
-      description: "영어에 연계된 그 어떤 작은것으로도 칭찬받아 흥미를 찾고 즐겁게 수업",
+      title: "단어는 알지만 문장으로 표현하지 못하는 아이",
+      description: "알고 있는 단어를 실제 대화에서 활용하는 방법 학습",
       image: "https://images.pexels.com/photos/8471831/pexels-photo-8471831.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop"
     },
     {
       icon: <Heart className="text-pink-500" size={32} />,
       title: "내성적이지만 영어에 관심 있는 아이",
-      description: "열린공간및 여러아이들과 함께하는것을 부담스러워하는아이 ",
+      description: "편안한 1:1 환경에서 자신감을 키워나갑니다",
       image: "https://images.pexels.com/photos/8613200/pexels-photo-8613200.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop"
     }
   ];
