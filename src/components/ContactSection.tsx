@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Phone, MessageCircle, Mail, Gift, Clock, CheckCircle } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
+// EmailJS 초기화
+emailjs.init('4duuwgq4uCevA9Gh6');
+
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -22,20 +25,9 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // 환경 변수 확인
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-    if (!serviceId || !templateId || !publicKey) {
-      alert('EmailJS 설정이 완료되지 않았습니다. 관리자에게 문의해주세요.');
-      console.error('EmailJS 환경 변수가 설정되지 않았습니다:', {
-        serviceId: !!serviceId,
-        templateId: !!templateId,
-        publicKey: !!publicKey
-      });
-      return;
-    }
+    // EmailJS 설정값 직접 사용
+    const serviceId = 'service_vl2256h';
+    const templateId = 'template_uwn07qg';
 
     // EmailJS로 이메일 전송
     const templateParams = {
@@ -48,11 +40,10 @@ const ContactSection = () => {
       submit_date: new Date().toLocaleString('ko-KR')
     };
 
-    console.log('EmailJS 전송 시도 - Service ID:', serviceId);
-    console.log('Template ID:', templateId);
+    console.log('EmailJS 전송 시도...');
     console.log('전송 데이터:', templateParams);
 
-    emailjs.send(serviceId, templateId, templateParams, publicKey)
+    emailjs.send(serviceId, templateId, templateParams)
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
       alert('무료 체험 신청이 완료되었습니다! 곧 연락드리겠습니다.');
@@ -68,12 +59,7 @@ const ContactSection = () => {
     })
     .catch((error) => {
       console.error('EmailJS 전송 실패:', error);
-      console.error('Error details:', {
-        status: error.status,
-        text: error.text,
-        message: error.message
-      });
-      alert(`신청 중 오류가 발생했습니다.\n오류 코드: ${error.status || 'Unknown'}\n오류 메시지: ${error.text || error.message || '알 수 없는 오류'}\n\n직접 전화(010-8678-0842)로 연락 부탁드립니다.`);
+      alert(`신청 중 오류가 발생했습니다.\n오류: ${error.text || error.message || '알 수 없는 오류'}\n\n직접 전화(010-8678-0842)로 연락 부탁드립니다.`);
     });
   };
 
