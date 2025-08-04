@@ -47,8 +47,8 @@ const HeroSection = () => {
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
                 <img 
-                  src="https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop" 
-                  alt="아이가 화상 수업하는 모습" 
+                  src="/images/메인.png" 
+                  alt="아이가 온라인 영어과외 수업하는 모습" 
                   className="rounded-xl w-full h-auto"
                 />
               </div>
